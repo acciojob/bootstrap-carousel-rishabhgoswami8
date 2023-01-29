@@ -1,2 +1,41 @@
 
-/* Your CSS Code here. */
+.carousel-control.left, .carousel-control.right {
+background-image: none;
+}
+
+/* To make the carousel responsive */
+@media (max-width: 767px) {
+.carousel-inner .active.left {
+left: -100%;
+}
+.carousel-inner .next {
+left: 100%;
+}
+.carousel-inner .prev {
+left: -100%;
+}
+}
+
+@media (min-width: 767px) and (max-width: 992px ) {
+.carousel-inner .active.left {
+left: -50%;
+}
+.carousel-inner .next {
+left: 50%;
+}
+.carousel-inner .prev {
+left: -50%;
+}
+}
+
+@media (min-width: 992px ) {
+.carousel-inner .active.left {
+left: -25%;
+}
+.carousel-inner .next {
+left: 25%;
+}
+.carousel-inner .prev {
+left: -25%;
+}
+}
